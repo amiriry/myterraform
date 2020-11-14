@@ -14,7 +14,7 @@ resource "aws_instance" "webserver01" {
 					yum update -y
 					yum install -y httpd
 					EOF
-	key_name = "keypair1111"
+	key_name = "<keypair-name>"
 
 	tags = {
 		Name = "WebServer01"
