@@ -5,21 +5,21 @@ This repo contains terraform things
 &nbsp;&nbsp;&nbsp;Install httpd. <br />
 &nbsp;&nbsp;&nbsp;Use a key named `<keypair-name>` for connecting <br />
 
-aws_infra.1.tf - 
-&nbsp;&nbsp;&nbsp;Create - 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VPC named "myVPC"
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Security Group named "mysg". Open port 22 to the world and accept all.
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Public subnet called 'pubsub'
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Private subnet called 'privsub'
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Internet Gateway associated with 'myVPC'
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Elastic IP
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NAT gateway associated with the elastic ip from before. Depeneds on internet gateway
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Public route table called 'pubRT'
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Route for internet acces in pubRT
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Route in default route table from anywhere to NAT gateway
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Association between public subnet 'pubsub' and public route table 'pubRT'
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instance in public subnet
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instance in private subnet
+aws_infra.1.tf - <br />
+&nbsp;&nbsp;&nbsp;Create - <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VPC named "myVPC"<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Security Group named "mysg". Open port 22 to the world and accept all.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Public subnet called 'pubsub'<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Private subnet called 'privsub'<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Internet Gateway associated with 'myVPC'<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Elastic IP<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NAT gateway associated with the elastic ip from before. Depeneds on internet gateway<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Public route table called 'pubRT'<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Route for internet acces in pubRT<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Route in default route table from anywhere to NAT gateway<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Association between public subnet 'pubsub' and public route table 'pubRT'<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instance in public subnet<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instance in private subnet<br />
 
 	Variables:
 		private_default_table_id - The id of the default private subnet created with the VPC. 
