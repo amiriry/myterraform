@@ -10,7 +10,7 @@ Indexes of names starts with zero.
 Create Your own ssh key  with <br />
 `ssh-keygen` <br />
 Following the instructions. <br />
-Copy the name of the public key, example `mykey.pub` and put it in the file *aws_infra_for_kube* under `aws_key_pair` resource, inside `file` function in `public_key attribute`. <br />
+Copy the name of the public key, example `mykey.pub` and put it in the file *aws_infra_for_kube.tf* under `aws_key_pair` resource, inside `file` function in `public_key` attribute. <br />
 The public key shown there adhere to this example
 
 Create public key: <br />
