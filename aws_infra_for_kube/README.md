@@ -7,7 +7,12 @@ Choose the amount of worker instances you want by chaging the `count` in the fil
 You need yo have the same number of names as `count` under `variable "instance_names"`. <br />
 Indexes of names starts with zero. 
 
-Create Your own ssh key and put the name of the public key inside the file function in public_key attributes under aws_key_pair resource. The public key shown here is just an example.<br />
+Create Your own ssh key  with <br />
+`ssh-keygen` <br />
+Following the instructions. <br />
+Copy the name of the public key, example `mykey.pub` and put it in the file *aws_infra_for_kube* under `aws_key_pair` resource, inside `file` function in `public_key attribute`. <br />
+The public key shown there adhere to this example
+
 Create public key: <br />
 `ssh-keygen` <br />
 Follow the instructions after doing the command. <br />
