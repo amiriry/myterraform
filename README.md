@@ -1,9 +1,9 @@
 This repo contains terraform things
 
-aws_instance.1.tf
-	Create and instance with amazn2 AMI, t2.micro instance inside sg already existing Security Group. 
-	Install httpd.
-	Use a key named <keypair-name> for connecting
+*aws_instance.1.tf* <br />
+&nbsp;&nbsp;Create and instance with amazn2 AMI, t2.micro instance inside sg already existing Security Group. <br />
+&nbsp;&nbsp;Install httpd. <br />
+&nbsp;&nbsp;Use a key named `<keypair-name>` for connecting <br />
 
 aws_infra.1.tf - 
 	Create - 
