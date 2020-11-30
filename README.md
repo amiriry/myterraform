@@ -21,11 +21,11 @@ aws_infra.1.tf - <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instance in public subnet<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instance in private subnet<br />
 
-#####Variables:
-&nbsp;&nbsp;&nbsp;`private_default_table_id` - The id of the default private subnet created with the VPC. 
+##### Variables:
+&nbsp;&nbsp;&nbsp;`private_default_table_id` - The id of the default private subnet created with the VPC. <br />
 &nbsp;&nbsp;&nbsp;`keypair_name` - The name of the key that is going to be used for connecting to the servers
 
-#####Summary:
+##### Summary:
 &nbsp;&nbsp;&nbsp;VPC with 2 subnets, one public and one private. The private should be able to get information from the internet through the NAT gateway, but cannot be accessed from outside. 2 Servers one in the public subnet and the other in the private.
-#####Check:	
+##### Check:	
 &nbsp;&nbsp;&nbsp;Can be checked that it works with the command 'sudo yum update'. If it works than the infrastructure is ok.
