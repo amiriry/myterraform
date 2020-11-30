@@ -17,7 +17,7 @@ You will use the private key that is created, with ssh to connect to the instanc
 Run `terraform apply` and do the following: <br />
 On the kubernetes master run the script *get_connection_string.sh* <br />
 You can copy it manually or do: <br />
-`scp -i <private_key_file> get_connection_string.sh ubuntu@<master_ip>` <br />
+`scp -i <private_key_file> get_connection_string.sh ubuntu@<master_ip>:<path_on_instance>` <br />
 
 This script will give you the command you need to run on each worker node to connect it to the kubernetes cluster 
 
