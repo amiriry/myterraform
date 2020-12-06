@@ -47,7 +47,7 @@ resource "aws_instance" "server31" {
 	instance_type = "t2.medium"
 	security_groups = ["mysg"]
 	key_name = "mykeypair"
-	user_data - file("bs_create_file.sh") # This script creates a file, a script and gives it permissions
+	user_data = file("bootstrap_create_file.sh") # This script creates a file, a script and gives it permissions
 
 	connection {
 		type = "ssh"
@@ -58,7 +58,7 @@ resource "aws_instance" "server31" {
 
 	# This copy a file from the current computer you are on
 	provisioner "file" {
-		source = "/home/amirshkedy/Programming/Bashscripts/get_connection_string.sh"
+		source = "somescript.sh"
 		destination = "/home/ubuntu/myscript.sh"
 	}
 
