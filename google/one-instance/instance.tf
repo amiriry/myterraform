@@ -1,5 +1,5 @@
 resource "google_compute_instance" "default" {
-	name = "fuckthis"
+	name = "instance1"
 	machine_type = "f1-micro"
 	zone = "us-central1-a"
 	boot_disk {
